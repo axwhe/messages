@@ -3,7 +3,7 @@ Messages Producer and Consumer
 
 Specification
 -------------
-In our system, we have just introduced several components that will generate certain log messages (Strings) in large volumes. Now we need another component that will collect these messages (in the same JVM) and persist them to a filesystem.
+In our system, there are several components that will generate certain log messages (Strings) in large volumes. Now we need another component that will collect these messages (in the same JVM) and persist them to a filesystem.
 
 Constraints:
 
@@ -12,7 +12,7 @@ Constraints:
 3. the component must not delay the originating component and should handle incoming message as quickly as possible (asynchronous from file writes).
 4. the component should create new file every 15 minutes (not blocking any processing).
 5. the created file should be easily readable by other Java applications (please write in words how to achieve that).
-6. we want a simple message logging system - we don't want a java.util.logging or Log4J appender.
+6. we don't want a java.util.logging or Log4J appender.
 
 Solution:
 
@@ -36,7 +36,7 @@ java -jar message.jar stop
 
 java -jar message.jar restart
 
-It can be configured as a service application easilly.
+It can be configured as a service application easily.
 
 ####Test
 
