@@ -11,7 +11,7 @@ import junit.framework.TestCase;
 
 /**
  * Based on Test Driving Development (TDD) which is one of most important part of software development
- * to insure a quality code.
+ * to ensure a quality code.
  * <p>
  * 
  * @author Andrew He
